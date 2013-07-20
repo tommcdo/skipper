@@ -4,9 +4,9 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.content.Intent;
 import android.net.Uri;
-//import android.widget.Toast;
-import java.net.URLDecoder;
-import java.io.UnsupportedEncodingException;
+import android.widget.Toast;
+import java.lang.Exception;
+import java.util.List;
 
 public class Skipper extends Activity
 {
@@ -16,9 +16,8 @@ public class Skipper extends Activity
         super.onCreate(savedInstanceState);
         Intent intent = getIntent();
 
-        String url = extractUrl(intent.getDataString());
+        Uri webAddress = extractUri(intent.getData());
 
-        Uri webAddress = Uri.parse(url);
         Intent webIntent = new Intent(Intent.ACTION_VIEW, webAddress);
         startActivity(webIntent);
 
@@ -26,17 +25,20 @@ public class Skipper extends Activity
         finish();
     }
 
-    public String extractUrl(String data)
+    public Uri extractUri(Uri uri)
     {
         String url;
         try
         {
-            url = URLDecoder.decode(data.split("=")[1], "UTF-8");
+            List<String> params = uri.getQueryParameters("u");
+            url  = params.get(0);
         }
-        catch (UnsupportedEncodingException e)
+        catch (Exception e)
         {
-            url = "Couldn't decode it";
+            String errorMessage = "Skipper was unable to extract URL from Facebook link";
+            Toast.makeText(getApplicationContext(), errorMessage, Toast.LENGTH_LONG).show();
+            url = "";
         }
-        return url;
+        return Uri.parse(url);
     }
 }
