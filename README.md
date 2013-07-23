@@ -35,13 +35,23 @@ particular app, it will just go straight there).
 How to use Skipper
 ------------------
 
-There's no configuration needed, and absolutely minimal setup required. After
-installing Skipper, launch Facebook and click any link that someone has shared.
-Android will ask you if you'd like to use Skipper or one of your web browsers
-to complete the action; choose Skipper, and be sure to select "always" for this
-type of action. You'll never have to look at Skipper again, and all of the
-links coming out of Facebook will have the opportunity to open in your
-favourite app.
+Using Skipper is very easy. In most cases, you will only have to see it once.
+
+1. Click on any link posted on Facebook.
+
+2. You will be presented with a choice to open the link with a web browser or
+   with Skipper. Choose Skipper, and select "Always".
+
+   ![](https://github.com/wiki/tommcdo/skipper/assets/images/choose-skipper.jpg)
+
+   This step will never be required again unless you install another
+   application that handles web links (such as a new web browser).
+
+3. Choose the application you want to open the link with.
+
+   ![](https://github.com/wiki/tommcdo/skipper/assets/images/choose-application.jpg)
+
+4. Enjoy!
 
 Note that Skipper will not show up in the application drawer. There's nothing
 to do within the Skipper app itself, as its only job is to redirect traffic
