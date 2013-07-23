@@ -42,14 +42,14 @@ Using Skipper is very easy. In most cases, you will only have to see it once.
 2. You will be presented with a choice to open the link with a web browser or
    with Skipper. Choose Skipper, and select "Always".
 
-   ![](https://github.com/wiki/tommcdo/skipper/assets/images/choose-skipper.jpg)
+   ![](https://raw.github.com/wiki/tommcdo/skipper/assets/images/choose-skipper.jpg)
 
    This step will never be required again unless you install another
    application that handles web links (such as a new web browser).
 
 3. Choose the application you want to open the link with.
 
-   ![](https://github.com/wiki/tommcdo/skipper/assets/images/choose-application.jpg)
+   ![](https://raw.github.com/wiki/tommcdo/skipper/assets/images/choose-application.jpg)
 
 4. Enjoy!
 
