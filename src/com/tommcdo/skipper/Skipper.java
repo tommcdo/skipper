@@ -32,7 +32,7 @@ public class Skipper extends Activity
         try
         {
             // Grab the URL from the query parameter 'u'.
-            url  = uri.getQueryParameters("u").get(0);
+            url  = uri.getQueryParameter("u");
         }
         catch (Exception e)
         {
